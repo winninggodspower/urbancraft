@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyload</title>
+    <link rel="stylesheet" href="/static/css/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="relative min-h-[600px]">
+        <!-- Background Image -->
+        <div class="absolute inset-0 ">
+            <img src="/static/images/Group 249.jpg" alt="Hero Background" class="w-full h-full object-cover">
+            <!-- Dark Overlay -->
+            <div class="bg-black opacity-65 absolute inset-0"></div>
+        </div>
+
+        <nav class="relative z-10 ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <a class="flex gap-1 text-white" href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5559 12.906L16.1009 13.359C16.1009 13.359 15.0179 14.435 12.0629 11.497C9.10788 8.55901 10.1909 7.48301 10.1909 7.48301L10.4769 7.19701C11.1839 6.49501 11.2509 5.36701 10.6339 4.54301L9.37388 2.86001C8.60988 1.84001 7.13488 1.70501 6.25988 2.57501L4.68988 4.13501C4.25688 4.56701 3.96688 5.12501 4.00188 5.74501C4.09188 7.33201 4.80988 10.745 8.81388 14.727C13.0609 18.949 17.0459 19.117 18.6749 18.965C19.1909 18.917 19.6389 18.655 19.9999 18.295L21.4199 16.883C22.3799 15.93 22.1099 14.295 20.8819 13.628L18.9719 12.589C18.1659 12.152 17.1859 12.28 16.5559 12.906Z"
+                                fill="white" />
+                        </svg>
+                        +1 224-477-2330</a>
+                    <a class="hidden md:flex gap-1 text-white" href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4Z"
+                                fill="white" />
+                        </svg>
+                        contact@urbancraftproperties.com
+                    </a>
+                </div>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidd focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-orange-700 rounded-sm md:bg-transparent md:text-orange-500 md:p-0 "
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">Contact</a>
+                        </li>
+                        <button class="bg-secondary btn text-white hover:bg-orange-500 transition-colors">
+                            BOOK A SERVICE
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="container mx-auto px-4 relative z-10 text-center text-white py-20 pb-32">
+            <img src="/static/images/urban-craft.png" alt="Urban Craft Icon" class="mx-auto mb-8">
+            <h1 class="text-3xl md:text-5xl font-semibold md:leading-14 max-w-4xl mx-auto">
+                UPGRADE YOUR HOME WITH TRUSTED REPAIR & REMODELING SERVICES
+            </h1>
+            <p class="text-lg md:text-2xl mt-3 md:mt-6 max-w-xl mx-auto">
+                We specialize in home repairs, remodeling, and improvements. Let’s bring your vision to life!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 mt-4 md:mt-8">
+                <button class="bg-secondary btn hover:bg-orange-500 transition-colors">
+                    BOOK A SERVICE
+                </button>
+                <button class="border-2 border-white btn hover:bg-white hover:text-primary transition-colors">
+                    EXPLORE SERVICES
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="relative max-w-screen-xl px-4 py-16 md:pb-0 mx-auto bg-blue-800 transform -translate-y-20">
+            <div class="poster bg-secondary">
+                ABOUT US
+            </div>
+            <div class="grid gap-14 md:grid-cols-2 items-center">
+                <!-- Left Column - Image -->
+                <div class="relative">
+                    <img src="/static/images/pleased-young-contractor.png" alt="Professional Contractor"
+                        class=" h-[700px] rounded-lg object-cover">
+                </div>
+
+                <!-- Right Column - Content -->
+                <div class="text-white">
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        Everything you need, right under one roof!
+                    </h2>
+
+                    <p class="mt-5 mb-8 leading-relaxed">
+                        At Urbancraft properties, we specialize in transforming homes through repairs, remodeling and
+                        improvements. Our team is dedicated to delivering excellent services that exceed our clients
+                        expectations, we understand that every home is unique and that’s why we take a personalized
+                        approach to each project. From kitchen and bathroom remodels to roof repairs and basement
+                        finishing, we’ll work with you to bring your vision to life. Contact us today to schedule a
+                        consultation
+                    </p>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Our Commitments</h3>
+                        <ul class="space-y-3 list-checker">
+                            <li class="flex gap-4 items-center">
+                                <img src="static/images/svgs/checker.svg" alt="">
+                                Attention to Details
+                            </li>
+                            <li class="flex gap-4 items-center">
+                                <img src="static/images/svgs/checker.svg" alt="">
+                                Seamless Project Execution
+                            </li>
+                            <li class="flex gap-4 items-center">
+                                <img src="static/images/svgs/checker.svg" alt="">
+                                Use of Premium Materials
+                            </li>
+                            <li class="flex gap-4 items-center">
+                                <img src="static/images/svgs/checker.svg" alt="">
+                                Timely & Reliable Service
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-16 px-4 bg-white ">
+        <img class="absolute right-0 bottom-0 h-full hidden md:block" src="/static/images/workman.png" alt="">
+        <div class="relative max-w-screen-xl py-16 md:pb-0 mx-auto">
+            <div class="py-3 px-8 font-bold absolute top-0 left-0 text-white bg-primary">
+                SERVICES
+            </div>
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-[repeat(2,420px)] gap-x-6 gap-y-8 mt-10 md:my-16">
+                <div
+                    class="relative group overflow-hidden rounded-3xl bg-[url('/static/images/Rectangle72.png')] h-[350px] md:h-[380px] ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10"></div>
+                    <div class="absolute bottom-10 left-0 right-10 p-6 bg-[#001240BD]">
+                        <h3 class="text-white text-2xl font-black mb-4">HOME REPAIRS</h3>
+                        <div class="flex space-x-3">
+                            <button
+                                class="btn bg-secondary text-white py-2 text-xs  hover:bg-orange-600 transition-colors">
+                                BOOK NOW
+                            </button>
+                            <button
+                                class="btn border border-white text-white px-6 py-2 hover:bg-white hover:text-primary transition-colors">
+                                EXPLORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kitchen & Bathroom Card -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl bg-[url('/static/images/Rectangle72.png')] h-[350px] md:h-[380px] transform md:translate-y-14">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10"></div>
+                    <div class="absolute bottom-10 left-0 right-10 p-6 bg-[#001240BD]">
+                        <h3 class="text-white text-2xl font-black mb-4">KITCHEN & BATHROOM REMODELING</h3>
+                        <div class="flex space-x-3">
+                            <button
+                                class="btn bg-secondary text-white py-2 text-xs  hover:bg-orange-600 transition-colors">
+                                BOOK NOW
+                            </button>
+                            <button
+                                class="btn border border-white text-white px-6 py-2 hover:bg-white hover:text-primary transition-colors">
+                                EXPLORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basement Finishing Card -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl bg-[url('/static/images/Rectangle72.png')] h-[350px] md:h-[380px] ">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10"></div>
+                    <div class="absolute bottom-10 left-0 right-10 p-6 bg-[#001240BD]">
+                        <h3 class="text-white text-2xl font-black mb-4">BASEMENT FINISHING & CONVERSION</h3>
+                        <div class="flex space-x-3">
+                            <button
+                                class="btn bg-secondary text-white py-2 text-xs  hover:bg-orange-600 transition-colors">
+                                BOOK NOW
+                            </button>
+                            <button
+                                class="btn border border-white text-white px-6 py-2 hover:bg-white hover:text-primary transition-colors">
+                                EXPLORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exterior Renovations Card -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl bg-[url('/static/images/Rectangle72.png')] h-[350px] md:h-[380px] transform md:translate-y-14">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10"></div>
+                    <div class="absolute bottom-10 left-0 right-10 p-6 bg-[#001240BD]">
+                        <h3 class="text-white text-2xl font-black mb-4">EXTERIOR RENOVATIONS</h3>
+                        <div class="flex space-x-3">
+                            <button
+                                class="btn bg-secondary text-white py-2 text-xs  hover:bg-orange-600 transition-colors">
+                                BOOK NOW
+                            </button>
+                            <button
+                                class="btn border border-white text-white px-6 py-2 hover:bg-white hover:text-primary transition-colors">
+                                EXPLORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="px-4 h-[500px] grid items-center bg-[linear-gradient(270deg,#051D5B_46.69%,rgba(15,57,166,0.51)100%)]">
+        <div></div>
+
+        <!-- Content Container -->
+        <div class="text-center text-white md:w-5xl ml-auto ">
+            <div class="w-full max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold">
+                    Transform Your Home with Expert Renovations
+                </h2>
+                <p class="text-lg mt-6">
+                    Whether it's a small upgrade or a complete makeover, we bring quality craftsmanship and attention to
+                    detail to every project. Let's make your home the best it can be!
+                </p>
+                <button class="btn bg-secondary hover:bg-orange-700 transition-colors mt-12 font-medium">
+                    BOOK A SERVICE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white relative overflow-hidden">
+        <!-- Tools decoration left -->
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 opacity-10">
+            <img src="/placeholder.svg?height=200&width=200" alt="" class="w-48 h-auto" aria-hidden="true">
+        </div>
+
+        <!-- Tools decoration right -->
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 opacity-10">
+            <img src="/placeholder.svg?height=200&width=200" alt="" class="w-48 h-auto" aria-hidden="true">
+        </div>
+
+        <div class="container mx-auto px-4">
+            <!-- Stats Grid -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-fit w-full mx-auto">
+                <!-- Professional Image with Stats -->
+                <div class="lg:col-span-2 flex justify-center items-center relative">
+                    <img src="/static/images/myspec.png" alt="Professional Contractor" class="max-w-md w-full z-10">
+
+                    <!-- Stats Overlays -->
+                    <div
+                        class="absolute top-1/5 left-0 bg-secondary text-white px-6 md:px-8 py-9 md:py-12 transform -translate-x-1/4 text-center -translate-y-1/4 z-0">
+                        <div class="text-xs text-center ">COMPLETED PROJECTS</div>
+                        <div class="text-6xl md:text-7xl font-black">751</div>
+                    </div>
+
+                    <div
+                        class="absolute top-1/3 right-0 bg-[#4277FF] text-white px-6 py-6 md:px-8 md:py-8 transform translate-x-1/2 text-center -translate-y-1/4 z-10">
+                        <div class="text-xs text-center">EXPERT WORKERS</div>
+                        <div class="text-6xl md:text-7xl font-black">149</div>
+                    </div>
+
+                    <div
+                        class="absolute bottom-[12%] right-0 bg-secondary text-white px-6 py-6 md:px-8 md:py-8 transform translate-x-1/2 text-center z-0">
+                        <div class="text-xs text-center">YEARS OF EXPERIENCE</div>
+                        <div class="text-6xl md:text-7xl font-black">25</div>
+                    </div>
+
+                    <div
+                        class="absolute left-1/4 bottom-0 bg-[#061640] text-white px-6 py-6 md:px-8 md:py-8 transform -translate-x-1/2 text-center z-10">
+                        <div class="text-xs text-center">HAPPY CUSTOMERS</div>
+                        <div class="text-6xl md:text-7xl font-black">751</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[linear-gradient(270deg,#051D5B_0%,rgba(5,29,91,0.99)40.29%,rgba(15,57,166,0.34)100%)]">
+
+
+        <!-- Content Container -->
+        <div class="relative max-w-screen-xl text-white mx-auto grid md:grid-cols-2 items-center  px-4 py-20 md:py-24">
+            <div class="poster bg-secondary">
+                WHY CHOOSE US
+            </div>
+            <div></div>
+            <div class="w-full max-w-md mx-auto">
+                <h3 class="text-2xl md:text-3xl font-bold mb-8">We are built on Trust & Quality</h3>
+                <ul class="space-y-5 list-checker">
+                    <li class="flex gap-4 justify-start items-start">
+                        <img src="static/images/svgs/checker.svg" alt="">
+                        <div>
+                            <h5 class="font-bold text-lg">Years of Experience in Home Renovation</h5>
+                            <p class="">With a proven track record of successful projects, we bring expertise and
+                                professionalism to every job.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 justify-start items-start">
+                        <img src="static/images/svgs/checker.svg" alt="">
+                        <div>
+                            <h5 class="font-bold text-lg">Fully Licensed & Insured for Your Peace of Mind
+                            </h5>
+                            <p>We follow industry standards and safety regulations, ensuring your home is in capable
+                                hands.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 justify-start items-start">
+                        <img src="static/images/svgs/checker.svg" alt="">
+                        <div>
+                            <h5 class="font-bold text-lg">Comprehensive Services
+                            </h5>
+                            <p>From minor repairs to full-scale renovations, we handle it all.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 justify-start items-start">
+                        <img src="static/images/svgs/checker.svg" alt="">
+                        <div>
+                            <h5 class="font-bold text-lg">Committed to Customer Satisfaction</h5>
+                            <p>Our 5-star ratings and positive reviews reflect the trust homeowners place in us for
+                                quality renovations..</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4">
+        <div class="relative max-w-screen-xl mx-auto py-20 pb-16 md:pt-24">
+            <div class="poster bg-primary px-4">
+                OUR WORKS
+            </div>
+
+            <h2 class="font-semibold text-4xl md:text-5xl text-center mb-12">Recently Completed
+                <br> Projects
+            </h2>
+
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-9 mb-12">
+                <!-- House Painting -->
+                <div class="group">
+                    <div class="relative overflow-hidden">
+                        <img src="/static/images/house-painting.png" alt="House Painting Project"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:border-2">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-bold text-xl text-primary">HOUSE PAINTING</h3>
+                        <p class="text-sm font-medium">Jan. 10th 2021</p>
+                    </div>
+                </div>
+
+                <!-- Window Fixing -->
+                <div class="group">
+                    <div class="relative overflow-hidden">
+                        <img src="/static/images/Rectangle 86.png" alt="Window Fixing Project"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:border-2">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-bold text-xl text-primary">WINDOW FIXING</h3>
+                        <p class="text-sm font-medium">Mar. 15th 2022</p>
+                    </div>
+                </div>
+
+                <!-- Full House Renovation -->
+                <div class="group">
+                    <div class="relative overflow-hidden">
+                        <img src="/static/images/house-painting.png" alt="Full House Renovation"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:border-2">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-bold text-lg txlt-primary">FULL HOUSE RENOVATION</h3>
+                        <p class="text-sm font-medium"> Mar. 27th 2023</p>
+                    </div>
+                </div>
+
+                <!-- Full Kitchen Remodeling -->
+                <div class="group">
+                    <div class="relative overflow-hidden">
+                        <img src="/static/images/house-painting.png" alt="Full Kitchen Remodeling"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:border-2">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-bold text-xl text-primary">FULL KITCHEN REMODELING</h3>
+                        <p class="text-sm font-medium">Dec. 17th 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More Button -->
+            <div class="text-center">
+                <button class="btn-primary bg-[#051D5B]">
+                    SEE MORE PROJECTS
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="px-4 pt-24">
+        <div class="relative max-w-screen-xl mx-auto py-20 md:py-24">
+            <div class="poster bg-primary px-4">
+                TESTIMONIALS
+            </div>
+
+            <div class="max-w-2xl mx-auto text-center mb-12">
+                <h2 class="font-semibold text-4xl md:text-5xl text-center mb-3">
+                    What Our Customers Say
+                </h2>
+                <p class="text-lg">We take pride in delivering high-quality renovations that transform homes and exceed
+                    expectations. Here’s what our happy clients have to say:</p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-lg border border-[#808080] hover:shadow-lg hover:border-[#095D7E] p-6 px-8">
+                    <div class="relative">
+                        <img src="/static/images/svgs/quote.svg" class="size-6 md:size-11" alt="">
+                        <div class="absolute left-0 w-full top-0 translate-y-2 md:translate-y-6">
+                            <img src="/static/images/rating.png" class="mx-auto transform " alt="">
+                        </div>
+                    </div>
+                    <p class="mb-6 md:mb-10 mt-4 text-xs md:text-sm font-medium">
+                        Urbancraft Properties turned my outdated kitchen into a modern masterpiece. The attention to
+                        detail was outstanding
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="/static/images/tesimonial-1.png" class="rounded-full h-10" alt="">
+                        <div>
+                            <p class="text-sm font-bold">Dr. Rachel Smith</p>
+                            <p class="text-sm md:text-sm font-medium">GP Trainee ST3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border border-[#808080] hover:shadow-lg hover:border-[#095D7E] p-6 px-8">
+                    <div class="relative">
+                        <img src="/static/images/svgs/quote.svg" class="size-6 md:size-11" alt="">
+                        <div class="absolute left-0 w-full top-0 translate-y-2 md:translate-y-6">
+                            <img src="/static/images/rating.png" class="mx-auto transform " alt="">
+                        </div>
+                    </div>
+                    <p class="mb-6 md:mb-10 mt-4 text-xs md:text-sm font-medium">
+                        Reliable, professional, and efficient! My roof repair was completed on time, and the results
+                        were excellent
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="/static/images/tesimonial-1.png" class="rounded-full h-10" alt="">
+                        <div>
+                            <p class="text-sm font-bold">Dr. James Parker</p>
+                            <p class="text-sm md:text-sm font-medium">Recently Qualified GP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg border border-[#808080] hover:shadow-lg hover:border-[#095D7E] p-6 px-8">
+                    <img src="/static/images/svgs/quote.svg" class="size-6 md:size-11" alt="">
+                    <img src="/static/images/rating.png" class="mx-auto transform -translate-y-5" alt="">
+                    <p class="mb-6 md:mb-10 text-xs md:text-sm font-medium">
+                        They transformed my basement into a beautiful living space. I couldn’t be happier
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="/static/images/tesimonial-1.png" class="rounded-full h-10" alt="">
+                        <div>
+                            <p class="text-sm font-bold">Dr. Sarah Ahmed</p>
+                            <p class="text-sm md:text-sm font-medium">GP Trainee ST2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- FAQ Content -->
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-semibold text-primary mb-14 md:mb-28">
+                        Frequently Asked<br>Questions
+                    </h2>
+
+                    <!-- Accordion -->
+                    <div id="accordion-open" data-accordion="open">
+                        <div class="my-4">
+                            <h2 id="accordion-open-heading-1">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-tl-xl focus:ring-4 focus:ring-gray-200 gap-3"
+                                    data-accordion-target="#accordion-open-body-1" aria-expanded="true"
+                                    aria-controls="accordion-open-body-1">
+                                    <span class="flex items-center text-start"><svg class="w-5 h-5 me-2 shrink-0"
+                                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                                clip-rule="evenodd"></path>
+                                        </svg> What services do you offer?</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
+                                <div class="p-5 border border-b-0 border-gray-200 ">
+                                    <p class="mb-2 text-gray-500 ">We specialize in home renovations, including repairs,
+                                        remodeling, and improvements. Our services cover kitchen and bathroom remodels,
+                                        roofing, plumbing, electrical work, basement finishing, and exterior upgrades.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <h2 id="accordion-open-heading-2">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-20 gap-3"
+                                    data-accordion-target="#accordion-open-body-2" aria-expanded="false"
+                                    aria-controls="accordion-open-body-2">
+                                    <span class="flex items-center text-start"><svg class="w-5 h-5 me-2 shrink-0"
+                                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>How long does a renovation take?</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
+                                <div class="p-5 border border-b-0 border-gray-200 ">
+                                    <p class="mb-2 text-gray-500">Flowbite is first conceptualized and
+                                        designed using the Figma software so everything you see in the library has a
+                                        design
+                                        equivalent in our Figma file.</p>
+                                    <p class="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/"
+                                            class="text-blue-600  hover:underline">Figma design system</a>
+                                        based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <h2 id="accordion-open-heading-3">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-20gap-3"
+                                    data-accordion-target="#accordion-open-body-3" aria-expanded="false"
+                                    aria-controls="accordion-open-body-3">
+                                    <span class="flex items-center text-start"><svg class="w-5 h-5 me-2 shrink-0"
+                                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                                clip-rule="evenodd"></path>
+                                        </svg> Can I stay in my home during renovations?</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
+                                <div class="p-5 border border-t-0 border-gray-200 ">
+                                    <p class="mb-2 text-gray-600">difference is that the core
+                                        components from Flowbite are open source under the MIT license, whereas Tailwind
+                                        UI
+                                        is a paid product. Another difference is that Flowbite relies on smaller and
+                                        standalone components, whereas Tailwind UI offers sections of pages.</p>
+                                    <p class="mb-2 text-gray-500">However, we actually recommend using
+                                        both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical
+                                        reason
+                                        stopping you from using the best of two worlds.</p>
+                                    <p class="mb-2 text-gray-500">Learn more about these technologies:
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <h2 id="accordion-open-heading-4">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-20gap-3"
+                                    data-accordion-target="#accordion-open-body-4" aria-expanded="false"
+                                    aria-controls="accordion-open-body-4">
+                                    <span class="flex items-center text-start"><svg class="w-5 h-5 me-2 shrink-0"
+                                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                                clip-rule="evenodd"></path>
+                                        </svg> Is there a warranty on your work?</span>
+                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 5 5 1 1 5" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-open-body-4" class="hidden" aria-labelledby="accordion-open-heading-4">
+                                <div class="p-5 border border-t-0 border-gray-200 ">
+                                    <p class="mb-2 text-gray-600">difference is that the core
+                                        components from Flowbite are open source under the MIT license, whereas Tailwind
+                                        UI
+                                        is a paid product. Another difference is that Flowbite relies on smaller and
+                                        standalone components, whereas Tailwind UI offers sections of pages.</p>
+                                    <p class="mb-2 text-gray-500">However, we actually recommend using
+                                        both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical
+                                        reason
+                                        stopping you from using the best of two worlds.</p>
+                                    <p class="mb-2 text-gray-500">Learn more about these technologies:
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Image -->
+                <div class="hidden lg:block">
+                    <img src="/static/images/workman-thumbup.png" alt="Professional Contractor"
+                        class="w-full object-bottom mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-[#061640D9]">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:grid grid-cols-[35%_65%]">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                <img src="/static/images/urban-craft.png" class="h-24 me-3" alt="FlowBite Logo" />
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-lg font-extrabold uppercase text-white">GET IN TOUCH</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-lg font-extrabold uppercase text-white">OUR SERVICES</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-lg font-extrabold uppercase text-white">QUICK LINKS</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="sm:flex sm:items-center sm:justify-center bg-[#1027F1] lg:py-6">
+        <span class="text-sm sm:text-center text-white">
+            ©  2025 Urban Craft All Rights Reserved.
+        </span>
+    </div>
+</footer>
+
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

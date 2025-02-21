@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+@theme{
+    --color-primary: #0B1B3F;
+    --color-secondary: #FE6F17;
+}
+
+@layer components{
+    .btn {
+     @apply cursor-pointer rounded-[10px] py-3 px-7 text-[12px] ;   
+    }
+    .btn-primary {
+        @apply cursor-pointer rounded-[10px] py-3 px-7 text-[12px] bg-primary text-white;
+    }
+    .btn-secondary {
+        @apply cursor-pointer rounded-[10px] py-3 px-7 text-[12px] bg-secondary text-white;
+    }
+    .poster {
+        @apply py-3 px-8  font-bold absolute top-0 left-0 text-white;
+    }
+}
+
+.list-cheker{
+    list-style-image: url('../images/svgs/checker.svg');
+}
