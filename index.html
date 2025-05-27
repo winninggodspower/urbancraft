@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URBAN CRAFT PROPERTIES</title>
+    <title>URBANCRAFT PROPERTIES</title>
     <meta name="description" content="Urban Craft Properties specializes in home repairs, remodeling, and improvements. Upgrade your home with trusted renovation services in Desplaines, IL.">
     <link rel="icon" type="image/png" href="static/images/urban-craft.png">
     
@@ -40,7 +40,7 @@
                                 d="M16.5559 12.906L16.1009 13.359C16.1009 13.359 15.0179 14.435 12.0629 11.497C9.10788 8.55901 10.1909 7.48301 10.1909 7.48301L10.4769 7.19701C11.1839 6.49501 11.2509 5.36701 10.6339 4.54301L9.37388 2.86001C8.60988 1.84001 7.13488 1.70501 6.25988 2.57501L4.68988 4.13501C4.25688 4.56701 3.96688 5.12501 4.00188 5.74501C4.09188 7.33201 4.80988 10.745 8.81388 14.727C13.0609 18.949 17.0459 19.117 18.6749 18.965C19.1909 18.917 19.6389 18.655 19.9999 18.295L21.4199 16.883C22.3799 15.93 22.1099 14.295 20.8819 13.628L18.9719 12.589C18.1659 12.152 17.1859 12.28 16.5559 12.906Z"
                                 fill="white" />
                         </svg>
-                        +(1224) 245-6588    
+                        +1 (224) 245-6588    
                     </a>
                     <a class="hidden md:flex gap-1 text-white" href="">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@
         </div>
     </header>
 
-    <section>
+    <section id="about-us">
         <div 
             class="relative max-w-screen-xl py-16 md:pb-0 mx-auto bg-blue-800 transform -translate-y-20"
             style="background-image: url('static/images/Group 416.png'); background-size: cover; background-position: center;"
@@ -135,20 +135,20 @@
                     </h2>
 
                     <p class="mt-5 mb-8 leading-relaxed">
-                        At Urbancraft properties, we specialize in transforming homes through repairs, remodeling and
+                        At Urbancraft Properties, we specialize in transforming homes through repairs, remodeling and
                         improvements. Our team is dedicated to delivering excellent services that exceed our clients
                         expectations, we understand that every home is unique and that’s why we take a personalized
                         approach to each project. From kitchen and bathroom remodels to roof repairs and basement
                         finishing, we’ll work with you to bring your vision to life. Contact us today to schedule a
-                        consultation
+                        consultation.
                     </p>
 
                     <div>
-                        <h3 class="text-2xl font-semibold mb-4">Our Commitments</h3>
+                        <h3 class="text-2xl font-semibold mb-4">Our Commitment</h3>
                         <ul class="space-y-3 list-checker">
                             <li class="flex gap-4 items-center">
                                 <img src="static/images/svgs/checker.svg" alt="">
-                                Attention to Details
+                                Attention to Detail
                             </li>
                             <li class="flex gap-4 items-center">
                                 <img src="static/images/svgs/checker.svg" alt="">
@@ -177,7 +177,7 @@
             </div>
             <!-- Services Grid -->
             <div class="grid grid-cols-1 md:grid-cols-[repeat(2,420px)] gap-x-6 gap-y-8 mt-10 md:my-16">
-                <div class="relative group overflow-hidden rounded-3xl h-[350px] md:h-[380px]" style="background-image: url('static/images/Rectangle72.png');">
+                <div id="home-repair" class="relative group overflow-hidden rounded-3xl h-[350px] md:h-[380px]" style="background-image: url('static/images/Rectangle72.png');">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10"></div>
                     <div class="absolute bottom-10 left-0 right-10 p-6 bg-[#001240BD]">
                         <h3 class="text-white text-2xl font-black mb-4">HOME REPAIRS</h3>
@@ -194,7 +194,7 @@
                 </div>
 
                 <!-- Kitchen & Bathroom Card -->
-                <div
+                <div id="kitchen-bathroom"
                     class="relative group overflow-hidden rounded-3xl bg-[url('static/images/Rectangle72.png')] h-[350px] md:h-[380px] transform md:translate-y-14"
                     style="background-image: url('static/images/toilet.jpg');"    
                 >
@@ -214,7 +214,7 @@
                 </div>
 
                 <!-- Basement Finishing Card -->
-                <div
+                <div id="basement-finishing"
                     class="relative group overflow-hidden rounded-3xl bg-[url('static/images/Rectangle72.png')] h-[350px] md:h-[380px] "
                     style="background-image: url('static/images/basement-finishing.png');"    
                 >
@@ -234,7 +234,7 @@
                 </div>
 
                 <!-- Exterior Renovations Card -->
-                <div
+                <div id="exterior-renovations"
                     class="relative group overflow-hidden rounded-3xl bg-[url('static/images/Rectangle72.png')] h-[350px] md:h-[380px] transform md:translate-y-14"
                     style="background-image: url('static/images/painting.png');"
                 >
@@ -381,7 +381,7 @@
         </div>
     </section>
 
-    <section class="px-4">
+    <section class="px-4 hidden">
         <div class="relative max-w-screen-xl mx-auto py-20 pb-16 md:pt-24">
             <div class="poster bg-primary px-4">
                 OUR WORKS
@@ -722,8 +722,8 @@
                     <div>
                         <h2 class="mb-6 text-xl font-extrabold uppercase text-white">GET IN TOUCH</h2>
                         <div class="leading-10">
-                            <p>30N River Rd, Desplaines, IL 60016 United States</p>
-                            <a href="tel:tel:+(1224) 245-6588">tel:+(1224) 245-6588</a>
+                            <p>30 N River Rd, Des Plaines IL 60016</p>
+                            <a href="tel:tel:+(1224) 245-6588">tel:+1 (224) 245-6588</a>
                             <a href="mailto:contact@urbancraftproperties.com">contact@urbancraftproperties.com</a>
                         </div>
                     </div>
@@ -731,16 +731,16 @@
                         <h2 class="mb-6 text-xl font-extrabold uppercase text-white">OUR SERVICES</h2>
                         <ul class="font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline"> &gt; Home Repair</a>
+                                <a href="#home-repair" class="hover:underline"> &gt; Home Repair</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="hover:underline"> &gt; Kitchen and Bathroom Remodeling</a>
+                                <a href="#kitchen-bathroom" class="hover:underline"> &gt; Kitchen and Bathroom Remodeling</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="hover:underline"> &gt; Basement Finishing & Conversion</a>
+                                <a href="#basement-finishing" class="hover:underline"> &gt; Basement Finishing & Conversion</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">&gt; Exterior Renovations </a>
+                                <a href="#exterior-renovations" class="hover:underline">&gt; Exterior Renovations </a>
                             </li>
                         </ul>
                     </div>
@@ -748,16 +748,16 @@
                         <h2 class="mb-6 text-xl font-extrabold uppercase text-white">QUICK LINKS</h2>
                         <ul class="font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">&gt; Home</a>
+                                <a href="#top" class="hover:underline">&gt; Home</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">&gt; About Us</a>
+                                <a href="#about-us" class="hover:underline">&gt; About Us</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">&gt; Services</a>
+                                <a href="#services-section" class="hover:underline">&gt; Services</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">&gt; Contact Us</a>
+                                <a href="https://api.whatsapp.com/send/?phone=%2B12242456588&text=i'm interested in booking a service&type=phone_number" class="hover:underline">&gt; Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -766,7 +766,7 @@
         </div>
         <div class="flex items-center justify-center bg-[#1027F1] py-6">
             <span class="text-sm text-center text-white font-bold">
-                © 2025 Urban Craft All Rights Reserved.
+                © 2025 UrbanCraft Properties All Rights Reserved.
             </span>
         </div>
     </footer>
