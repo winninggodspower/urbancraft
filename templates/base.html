@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}URBANCRAFT PROPERTIES{% endblock title %} </title>
+    <meta name="description" content="We specialize in home improvement services and repairs such as: drywall, painting, carpentry, flooring and other light fixes ( e.g changing toilet) in Desplaines Illinois.">
+    <link rel="icon" type="image/png" href="static/images/urban-craft.png">
+    
+    <link rel="stylesheet" href="static/css/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+
+{% include "components/footer.html" %}
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-7d47e40b-5c42-4671-b2b2-aa70aa3db0d8" data-elfsight-app-lazy></div>
+</body>
+</html>

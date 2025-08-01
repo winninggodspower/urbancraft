@@ -1,48 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URBANCRAFT PROPERTIES</title>
-    <meta name="description" content="We specialize in home improvement services and repairs such as: drywall, painting, carpentry, flooring and other light fixes ( e.g changing toilet) in Desplaines Illinois.">
-    <link rel="icon" type="image/png" href="static/images/urban-craft.png">
-    
-    <link rel="stylesheet" href="static/css/output.css">
+{% block title %}URBANCRAFT PROPERTIES | Home{% endblock title %}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Embed code for pop-up form: -->
-    <iframe
-        src="https://urbancraftpropertiesllc.connecthub.vip/widget/form/Eqaj6aUfH6PHF4ipsy9b"
-        style="width:100%;height:100%;border:none;border-radius:4px"
-        id="inline-Eqaj6aUfH6PHF4ipsy9b"
-        data-layout="{'id':'INLINE'}"
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="Marketing Form - Claim Offer (Edited)"
-        data-height="745"
-        data-layout-iframe-id="inline-Eqaj6aUfH6PHF4ipsy9b"
-        data-form-id="Eqaj6aUfH6PHF4ipsy9b"
-        title="Marketing Form - Claim Offer (Edited)"
-            >
-    </iframe>
-    <script src="https://urbancraftpropertiesllc.connecthub.vip/js/form_embed.js"></script>
-    <style>
-        * {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
-</head>
-
-<body>
+{% block content %}
     <header class="relative min-h-[600px]">
         <!-- Background Image -->
         <div class="absolute inset-0 ">
@@ -51,67 +11,9 @@
             <div class="bg-black opacity-65 absolute inset-0"></div>
         </div>
 
-        <nav class="relative z-10 ">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <div href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <a class="flex gap-1 text-white" href="tel:+(1224) 245-6588 ">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.5559 12.906L16.1009 13.359C16.1009 13.359 15.0179 14.435 12.0629 11.497C9.10788 8.55901 10.1909 7.48301 10.1909 7.48301L10.4769 7.19701C11.1839 6.49501 11.2509 5.36701 10.6339 4.54301L9.37388 2.86001C8.60988 1.84001 7.13488 1.70501 6.25988 2.57501L4.68988 4.13501C4.25688 4.56701 3.96688 5.12501 4.00188 5.74501C4.09188 7.33201 4.80988 10.745 8.81388 14.727C13.0609 18.949 17.0459 19.117 18.6749 18.965C19.1909 18.917 19.6389 18.655 19.9999 18.295L21.4199 16.883C22.3799 15.93 22.1099 14.295 20.8819 13.628L18.9719 12.589C18.1659 12.152 17.1859 12.28 16.5559 12.906Z"
-                                fill="white" />
-                        </svg>
-                        +1 (224) 245-6588    
-                    </a>
-                    <a class="hidden md:flex gap-1 text-white" href="">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4Z"
-                                fill="white" />
-                        </svg>
-                        contact@urbancraftproperties.com
-                    </a>
-                </div>
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center md:hidden p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidd focus:outline-none focus:ring-2 focus:ring-gray-200 "
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul
-                        class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white bg-orange-700 rounded-sm md:bg-transparent md:text-orange-500 md:p-0 "
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about-us"
-                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">About</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="https://urbancraftpropertiesllc.connecthub.vip/widget/form/HZvdHfKwmu6AzqqLQPMQ"
-                                class="block py-2 px-3 text-white rounded- md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 ">Contact</a>
-                        </li>
-                        <a href="https://urbancraftpropertiesllc.connecthub.vip/widget/form/HZvdHfKwmu6AzqqLQPMQ" class="bg-secondary btn text-white hover:bg-orange-500 transition-colors">
-                            BOOK A SERVICE
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="text-white">
+            {% include "components/navbar.html" %}
+        <div>
 
         <!-- Content -->
         <div class="container mx-auto px-4 relative z-10 text-center text-white py-20 pb-32">
@@ -359,7 +261,9 @@
             <div class="poster bg-secondary">
                 WHY CHOOSE US
             </div>
-            <div></div>
+            <div>
+            
+            </div>
             <div class="w-full max-w-md mx-auto">
                 <h3 class="text-2xl md:text-3xl font-bold mb-8">We are built on Trust & Quality</h3>
                 <ul class="space-y-5 list-checker">
@@ -694,107 +598,4 @@
         </div>
     </section>
 
-    <footer 
-        class="bg-[#061640D9]"
-        style="background-image: url('static/images/Group\ 415.png'); background-size: cover; background-position: center;"
-    >
-        <div class="mx-auto w-full max-w-[1400px] p-4 py-16">
-            <div class="md:grid grid-cols-[30%_70%] justify-between gap-8">
-                <div class="mb-6 md:mb-0">
-                    <a href="https://flowbite.com/" class="flex items-center">
-                        <img src="static/images/urban-craft.png" class="h-24 me-3" alt="FlowBite Logo" />
-                    </a>
-                    <p class="py-4 text-white text-sm leading-6">
-                        At Urbancraft Properties, we specialize in transforming homes through repairs, remodeling and improvements. Our team is dedicated to delivering excellent services that exceed our clients expectations, we understand that every home is unique and that’s why we take a personalized approach to each project. From kitchen and bathroom remodels to roof repairs and basement finishing, we’ll work with you to bring your vision to life. Contact us today to schedule a consultation.
-                    </p>
-                    <div class="flex items-center space-x-4 mt-4">
-                        <a href="https://www.instagram.com/urbancraft.properties/" target="_blank" class="">
-                            <svg width="30" viewBox="0 0 59 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.9556 0H41.512C50.8668 0 58.4676 7.70842 58.4676 17.1957V42.0998C58.4676 46.6604 56.6812 51.0342 53.5014 54.259C50.3216 57.4838 46.0089 59.2955 41.512 59.2955H16.9556C7.60079 59.2955 0 51.5871 0 42.0998V17.1957C0 12.6351 1.78639 8.26132 4.96618 5.0365C8.14597 1.81168 12.4587 0 16.9556 0ZM16.3709 5.92955C13.5797 5.92955 10.9029 7.05404 8.92922 9.05565C6.95555 11.0573 5.84676 13.772 5.84676 16.6027V42.6928C5.84676 48.5927 10.5534 53.3659 16.3709 53.3659H42.0967C44.8878 53.3659 47.5647 52.2415 49.5384 50.2398C51.512 48.2382 52.6208 45.5235 52.6208 42.6928V16.6027C52.6208 10.7028 47.9142 5.92955 42.0967 5.92955H16.3709ZM44.5815 10.3767C45.5507 10.3767 46.4802 10.7672 47.1655 11.4622C47.8508 12.1572 48.2358 13.0998 48.2358 14.0827C48.2358 15.0656 47.8508 16.0082 47.1655 16.7032C46.4802 17.3982 45.5507 17.7886 44.5815 17.7886C43.6124 17.7886 42.6829 17.3982 41.9976 16.7032C41.3123 16.0082 40.9273 15.0656 40.9273 14.0827C40.9273 13.0998 41.3123 12.1572 41.9976 11.4622C42.6829 10.7672 43.6124 10.3767 44.5815 10.3767ZM29.2338 14.8239C33.1104 14.8239 36.8283 16.3857 39.5695 19.1657C42.3107 21.9457 43.8507 25.7162 43.8507 29.6477C43.8507 33.5793 42.3107 37.3498 39.5695 40.1298C36.8283 42.9098 33.1104 44.4716 29.2338 44.4716C25.3571 44.4716 21.6393 42.9098 18.8981 40.1298C16.1569 37.3498 14.6169 33.5793 14.6169 29.6477C14.6169 25.7162 16.1569 21.9457 18.8981 19.1657C21.6393 16.3857 25.3571 14.8239 29.2338 14.8239ZM29.2338 20.7534C26.9078 20.7534 24.6771 21.6905 23.0324 23.3585C21.3876 25.0265 20.4637 27.2888 20.4637 29.6477C20.4637 32.0067 21.3876 34.269 23.0324 35.937C24.6771 37.605 26.9078 38.5421 29.2338 38.5421C31.5598 38.5421 33.7905 37.605 35.4352 35.937C37.0799 34.269 38.0039 32.0067 38.0039 29.6477C38.0039 27.2888 37.0799 25.0265 35.4352 23.3585C33.7905 21.6905 31.5598 20.7534 29.2338 20.7534Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=100083476595082" target="_blank" class="">
-                            <svg width="30" viewBox="0 0 59 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M58.9207 29.7221C58.9207 13.3155 45.824 0 29.6869 0C13.5499 0 0.453125 13.3155 0.453125 29.7221C0.453125 44.1075 10.5095 56.0855 23.8402 58.8497V38.6387H17.9934V29.7221H23.8402V22.2915C23.8402 16.5552 28.4299 11.8888 34.072 11.8888H41.3804V20.8054H35.5337C33.9258 20.8054 32.6103 22.1429 32.6103 23.7776V29.7221H41.3804V38.6387H32.6103V59.2955C47.3734 57.8094 58.9207 45.1478 58.9207 29.7221Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/company/urbancraft-properties/" target="_blank" class="">
-                            <svg width="30" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M48.1937 0.743164C49.7891 0.743164 51.319 1.38177 52.4471 2.51848C53.5752 3.6552 54.2089 5.19692 54.2089 6.80448V49.2337C54.2089 50.8413 53.5752 52.383 52.4471 53.5197C51.319 54.6564 49.7891 55.295 48.1937 55.295H6.08745C4.49212 55.295 2.96214 54.6564 1.83407 53.5197C0.706006 52.383 0.0722656 50.8413 0.0722656 49.2337V6.80448C0.0722656 5.19692 0.706006 3.6552 1.83407 2.51848C2.96214 1.38177 4.49212 0.743164 6.08745 0.743164H48.1937ZM46.6899 47.7184V31.6559C46.6899 29.0356 45.6569 26.5226 43.8182 24.6697C41.9794 22.8169 39.4856 21.7759 36.8852 21.7759C34.3287 21.7759 31.3512 23.3519 29.9076 25.7158V22.3518H21.5164V47.7184H29.9076V32.7772C29.9076 30.4436 31.7723 28.5343 34.0881 28.5343C35.2049 28.5343 36.2758 28.9813 37.0655 29.777C37.8551 30.5727 38.2988 31.6519 38.2988 32.7772V47.7184H46.6899ZM11.7417 17.5936C13.0818 17.5936 14.367 17.0572 15.3146 16.1024C16.2621 15.1475 16.7945 13.8525 16.7945 12.5021C16.7945 9.68361 14.5388 7.38031 11.7417 7.38031C10.3937 7.38031 9.10083 7.91993 8.14762 8.88045C7.1944 9.84098 6.65889 11.1437 6.65889 12.5021C6.65889 15.3206 8.94466 17.5936 11.7417 17.5936ZM15.9223 47.7184V22.3518H7.59124V47.7184H15.9223Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <!-- <a href="https://www.twitter.com" target="_blank" class="">
-                            <svg width="30" viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.30944 0.743164C3.38501 0.743164 0.194336 4.23789 0.194336 8.53629V47.5019C0.194336 51.8003 3.38501 55.295 7.30944 55.295H42.8849C46.8094 55.295 50.0001 51.8003 50.0001 47.5019V8.53629C50.0001 4.23789 46.8094 0.743164 42.8849 0.743164H7.30944ZM40.3391 10.9716L28.7993 25.4133L42.3736 45.0666H31.7454L23.4296 33.1455L13.902 45.0666H8.62129L20.9615 29.6143L7.94313 10.9716H18.8381L26.3646 21.8698L35.0583 10.9716H40.3391ZM36.1367 41.6084L17.2483 14.2472H14.1021L33.2017 41.6084H36.1256H36.1367Z"
-                                    fill="white" />
-                            </svg>
-                        </a> -->
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3 justify-between text-white mt-10 md:mt-28">
-                    <div>
-                        <h2 class="mb-6 text-xl font-extrabold uppercase text-white">GET IN TOUCH</h2>
-                        <div class="leading-10">
-                            <p>30 N River Rd, Des Plaines IL 60016</p>
-                            <a href="tel:tel:+(1224) 245-6588">tel:+1 (224) 245-6588</a>
-                            <a href="mailto:contact@urbancraftproperties.com">contact@urbancraftproperties.com</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-xl font-extrabold uppercase text-white">OUR SERVICES</h2>
-                        <ul class="font-medium">
-                            <li class="mb-4">
-                                <a href="#home-repair" class="hover:underline"> &gt; Home Repair</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#kitchen-bathroom" class="hover:underline"> &gt; Kitchen and Bathroom Remodeling</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#basement-finishing" class="hover:underline"> &gt; Basement Finishing & Conversion</a>
-                            </li>
-                            <li>
-                                <a href="#exterior-renovations" class="hover:underline">&gt; Exterior Renovations </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-xl font-extrabold uppercase text-white">QUICK LINKS</h2>
-                        <ul class="font-medium">
-                            <li class="mb-4">
-                                <a href="#top" class="hover:underline">&gt; Home</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#about-us" class="hover:underline">&gt; About Us</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="#services-section" class="hover:underline">&gt; Services</a>
-                            </li>
-                            <li>
-                                <a href="https://api.whatsapp.com/send/?phone=%2B12242456588&text=i'm interested in booking a service&type=phone_number" class="hover:underline">&gt; Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex items-center justify-center bg-[#1027F1] py-6">
-            <span class="text-sm text-center text-white font-bold">
-                © 2025 UrbanCraft Properties All Rights Reserved.
-            </span>
-        </div>
-    </footer>
-
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-7d47e40b-5c42-4671-b2b2-aa70aa3db0d8" data-elfsight-app-lazy></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-</body>
-
-</html>
+{% endblock %}
